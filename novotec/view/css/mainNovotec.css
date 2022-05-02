@@ -1,0 +1,33 @@
+/* *{
+    box-shadow: inset 0px 0px 4px rgb(0,0,0,1);
+} */
+
+body {
+    padding: 5%;
+    margin: 0;
+
+}
+
+.container {
+    padding: 0 !important;
+    margin: 0;
+    max-width: 100%;
+}
+
+#nav-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #E3E3E3;
+}
+
+#home-site {
+    height: 80px;
+    width: 160px;
+}
+
+.imghm {
+    width: 100% !important;
+    height: 100%;
+}
