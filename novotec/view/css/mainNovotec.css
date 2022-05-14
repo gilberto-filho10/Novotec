@@ -2,13 +2,13 @@
     box-shadow: inset 0px 0px 4px rgb(0,0,0,1);
 } */
 
-body {
+/* body {
     padding: 5%;
     margin: 0;
 
-}
+} */
 
-.container {
+/* .container {
     padding: 0 !important;
     margin: 0;
     max-width: 100%;
@@ -20,14 +20,23 @@ body {
     top: 0;
     left: 0;
     background-color: #E3E3E3;
-}
+    margin-bottom: 50% !important;
+} */
 
 #home-site {
-    height: 80px;
-    width: 160px;
+    height: 50px;
+    width: 120px;
 }
 
-.imghm {
-    width: 100% !important;
-    height: 100%;
+#img-capa{
+    height: 500px;
+    width: 900px;
+}
+
+.col-home{
+    text-align: justify;
+}
+
+li{
+    text-align: justify;
 }

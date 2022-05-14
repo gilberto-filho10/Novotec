@@ -25,13 +25,13 @@
     <header></header>
 
     <!-- ==================== Barra de navegação exclusiva para o Novotec ==================== -->
-    <nav class="navbar navbar-expand navbar-light" id="nav-header">
-        <div class="container">
+    <!-- <nav class="navbar navbar-expand navbar-light" id="nav-header">
+        <div class="container" id="">
             <div class="collapse navbar-collapse" id="nav-principal">
-                <ul class=" row align-items-center navbar-nav mx-auto">
+                <ul class=" row align-items-center navbar-nav col-auto">
                     <li class="nav-item">
                         <a href="http://www.fatecid.com.br/site/" class="nav-link">
-                            <img id="home-site" src="img/logo_fatec2015.png" alt="logo Fatec-ID">
+                            <img id="home-site" class="img-fluid" src="img/logo_fatec2015.png" alt="logo Fatec-ID">
                         </a>
                     </li>
                     <li class="nav-item">
@@ -50,11 +50,44 @@
                 </ul>
             </div>
         </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <nav class="navbar navbar-expand navbar-light" id="nav-header"> -->
+        <span>
+            <a href="http://www.fatecid.com.br/site/" class="nav-link">
+                <img id="home-site" class="img-fluid" src="img/logo_fatec2015.png" alt="logo Fatec-ID">
+            </a>
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inscrições</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Depoimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Estágio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fale Conosco</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <section>
-        <div class="container">
-            <img src="img/reuniao_alunos.jpg" alt="grupo de alunos" class="img-fluid imghm">
+        <div class="container" id="img-capa">
+            <!-- <img src="img/reuniao_alunos.jpg" class="img-fluid" alt="Alunos reunidos"> -->
         </div>
     </section>
 
@@ -62,17 +95,33 @@
 
         <div class="container">
             <div class="row">
-              <div class="col-sm-4">
-                One of three columns
-              </div>
-              <div class="col-sm-4">
-                One of three columns
-              </div>
-              <div class="col-sm-4">
-                One of three columns
-              </div>
+                <div class="col-sm-4">
+                    <h2>Sobre o Novotec</h2>
+                    <p class="col-home">O programa Novotec chegou trazendo opções de cursos técnicos e
+                        profissionalizantes gratuitas aos estudantes do ensino médio das escolas estaduais paulistas.
+                        Oferecidos por instituições de referência, como as ETECs e FATECs do Centro Paula Souza, os
+                        cursos têm conteúdo conectado com demandas do mundo do trabalho e da vida fora da escola .</p>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Por que fazer Novotec?</h2>
+                    <ul>
+                        <li>Aprenda uma profissão sem prejudicar seus estudos.</li>
+                        <li>Desenvolva responsabilidades e habilidades profissionais.</li>
+                        <li>Fique mais próximo de uma oportunidade de trabalho.
+                        </li>
+                        <li>Estude tranquilo com uma bolsa-auxílio.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Novotec Expresso</h2>
+                    <p class="col-home">O programa Novotec Expresso leva formação profissional à juventude, conectando
+                        com o currículo do ensino médio. <br>
+                        São cursos de qualificação profissional, com certificação garantida e com duração de 120 horas
+                        realizadas em um semestre.</p>
+                </div>
             </div>
-          </div>
+        </div>
     </section>
 
     <aside>
@@ -88,3 +137,6 @@
 </body>
 
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
