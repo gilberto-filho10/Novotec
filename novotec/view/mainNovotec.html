@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/858e8845a9.js" crossorigin="anonymous"></script>
     <!-- Favicon Fatec-ID -->
     <link rel="icon"
         href="http://www.fatecid.com.br/site/wp-content/uploads/2018/01/cropped-cropped-fav-icon-32x32.png">
@@ -16,15 +15,50 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
-    <title>Novotec Expresso</title>
+    <title>Novotec Expresso Fatec-ID</title>
 </head>
 
 <body>
     <!-- ==================== Cabeçalho padrão ==================== -->
-    <header></header>
+    <header>
+        <div id="nav-principal">
+            <nav class="navbar navbar-expand navbar-light">
+                <div class="container">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a href="http://www.fatecid.com.br/site/" class="nav-link"><i
+                                        class="fa-solid fa-house-chimney"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#scroll1" class="nav-link">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.novotec.sp.gov.br/Curso/Modalidade/NovotecExpresso"
+                                    class="nav-link">Inscrições</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#scroll2" class="nav-link">Depoimentos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#scroll3" class="nav-link">Estágio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#scroll4" class="nav-link">Fale Conosco</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
 
-    <!-- ==================== Barra de navegação exclusiva para o Novotec ==================== -->
+    </header>
+
+    <!-- ==================== Barra de navegação Novotec ==================== -->
+
     <!-- <nav class="navbar navbar-expand navbar-light" id="nav-header">
         <div class="container" id="">
             <div class="collapse navbar-collapse" id="nav-principal">
@@ -52,8 +86,8 @@
         </div>
     </nav> -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- <nav class="navbar navbar-expand navbar-light" id="nav-header"> -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand navbar-light" id="nav-header">
         <span>
             <a href="http://www.fatecid.com.br/site/" class="nav-link">
                 <img id="home-site" class="img-fluid" src="img/logo_fatec2015.png" alt="logo Fatec-ID">
@@ -83,16 +117,16 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 
     <section>
-        <div class="container" id="img-capa">
-            <!-- <img src="img/reuniao_alunos.jpg" class="img-fluid" alt="Alunos reunidos"> -->
+        <div class="container">
+            <img src="img/reuniao_alunos.jpg" class="img-fluid imgf1">
         </div>
     </section>
 
+    <!-- ==================== Sessão de Introdução ao Novotec ==================== -->
     <section>
-
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
@@ -107,10 +141,8 @@
                     <ul>
                         <li>Aprenda uma profissão sem prejudicar seus estudos.</li>
                         <li>Desenvolva responsabilidades e habilidades profissionais.</li>
-                        <li>Fique mais próximo de uma oportunidade de trabalho.
-                        </li>
-                        <li>Estude tranquilo com uma bolsa-auxílio.
-                        </li>
+                        <li>Fique mais próximo de uma oportunidade de trabalho.</li>
+                        <li>Estude tranquilo com uma bolsa-auxílio.</li>
                     </ul>
                 </div>
                 <div class="col-sm-4">
@@ -124,13 +156,80 @@
         </div>
     </section>
 
-    <aside>
+    <!-- ==================== Sessão de Apresentação dos Cursos ==================== -->
+    <section class="caixa">
+        <div class="container">
+            <h1>Nossos Cursos</h1>
 
-    </aside>
+    <!-- ==================== Curso #1 ==================== -->
+                <aside>
+                    <div class="col-md-6 d-flex">
+                        <div class="mx-auto mb-3">
+                            <div id="carousel-indicadores" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://static.escolakids.uol.com.br/2020/08/dia-estudante.jpg" class="img-fluid rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.buenosaireseducacional.com.br/wp-content/uploads/2019/06/argentina-da-auxilio-para-estudantes-estrangeiros.png" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                                <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
+                                    <i class="fas fa-angle-double-left fa-3x"></i>
+                                </a>
+                                <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
+                                    <i class="fas fa-angle-double-right fa-3x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
 
-    <article>
+                <article>
+                    <div class="col-md-6">
+                        <div class="container-fluid">
 
-    </article>
+                        </div>
+                    </div>
+                </article>
+
+    <!-- ==================== Curso #2 ==================== -->
+
+                <article>
+                    <div class="col-md-6">
+                        <div class="container-fluid">
+
+                        </div>
+                    </div>
+                </article>
+
+                <aside>
+                    <div class="col-md-6 d-flex">
+                        <div class="mx-auto mb-3">
+                            <div id="carousel-indicadores" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://static.escolakids.uol.com.br/2020/08/dia-estudante.jpg" class="img-fluid rounded">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.buenosaireseducacional.com.br/wp-content/uploads/2019/06/argentina-da-auxilio-para-estudantes-estrangeiros.png" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                                <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
+                                    <i class="fas fa-angle-double-left fa-3x"></i>
+                                </a>
+                                <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
+                                    <i class="fas fa-angle-double-right fa-3x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
 
     <!-- ==================== Rodapé padrão ==================== -->
     <footer></footer>
@@ -138,5 +237,35 @@
 
 </html>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- JavaScript (Funcionamento do carrossel) -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    });
+
+    var swiper1 = new Swiper(".mySwiper1", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+        },
+    });
+</script>
+
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
