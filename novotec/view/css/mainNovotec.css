@@ -1,6 +1,6 @@
-*{
+/* *{
     box-shadow: inset 0px 0px 4px rgb(0,0,0,1);
-}
+} */
 
 html {
     scroll-behavior: smooth;
@@ -25,7 +25,24 @@ h1, h2{
 
 li{
     text-align: justify;
+    font-size: 20px;
 }
+
+.btnToggle {
+    border-color: #FFF!important;
+}
+
+.line {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+    padding-left: 25px;
+}
+
+.iconToggle {
+    color: #FFF!important;
+}
+
 
 .container {
     padding: 0 !important;
@@ -48,10 +65,12 @@ li{
 } */
 
 #nav-principal{
-    position: fixed;
     height: 100%;
     width: 100%;
-    z-index: 1;
+}
+
+.navbar-collapse {
+    justify-content: center;
 }
 
 #img-capa{
@@ -66,4 +85,12 @@ li{
 .imgf1 {
     width: 100%!important;
     height: 100%;
+}
+
+/* Tristeza */
+@media (max-width: 1000px)
+{
+    .line{
+        display: none!important;
+    }
 }

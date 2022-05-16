@@ -22,102 +22,41 @@
 </head>
 
 <body>
-    <!-- ==================== Cabeçalho padrão ==================== -->
+    <!-- ==================== Barra de navegação Novotec ==================== -->
     <header>
         <div id="nav-principal">
-            <nav class="navbar navbar-expand navbar-light">
-                <div class="container">
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a href="http://www.fatecid.com.br/site/" class="nav-link"><i
-                                        class="fa-solid fa-house-chimney"></i> Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#scroll1" class="nav-link">Cursos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://www.novotec.sp.gov.br/Curso/Modalidade/NovotecExpresso"
-                                    class="nav-link">Inscrições</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#scroll2" class="nav-link">Depoimentos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#scroll3" class="nav-link">Estágio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#scroll4" class="nav-link">Fale Conosco</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <a href="http://www.fatecid.com.br/site/" class="nav-link">
+                <img id="home-site" class="img-fluid" width="100" src="img/logo_fatec2015.png" alt="logo Fatec-ID">
+            </a>
+            <button class="navbar-toggler btn btnToggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars iconToggle"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="#scroll1" class="nav-link">Cursos<span class="line">|</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a href="https://www.novotec.sp.gov.br/Curso/Modalidade/NovotecExpresso"
+                    class="nav-link">Inscrições<span class="line">|</span></a>
+                  </li>
+                <li class="nav-item">
+                    <a href="#scroll2" class="nav-link">Depoimentos<span class="line">|</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#scroll3" class="nav-link">Estágio<span class="line">|</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#scroll4" class="nav-link">Fale Conosco</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-
     </header>
 
     <!-- ==================== Barra de navegação Novotec ==================== -->
-
-    <!-- <nav class="navbar navbar-expand navbar-light" id="nav-header">
-        <div class="container" id="">
-            <div class="collapse navbar-collapse" id="nav-principal">
-                <ul class=" row align-items-center navbar-nav col-auto">
-                    <li class="nav-item">
-                        <a href="http://www.fatecid.com.br/site/" class="nav-link">
-                            <img id="home-site" class="img-fluid" src="img/logo_fatec2015.png" alt="logo Fatec-ID">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#scroll1" class="nav-link">Cursos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.novotec.sp.gov.br/Curso/Modalidade/NovotecExpresso" target="_blank"
-                            rel="external" class="nav-link">Inscrições</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#scroll3" class="nav-link">Depoimentos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#scroll4" class="nav-link">Fale Conosco</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
-
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <nav class="navbar navbar-expand navbar-light" id="nav-header">
-        <span>
-            <a href="http://www.fatecid.com.br/site/" class="nav-link">
-                <img id="home-site" class="img-fluid" src="img/logo_fatec2015.png" alt="logo Fatec-ID">
-            </a>
-        </span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cursos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Inscrições</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Depoimentos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Estágio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Fale Conosco</a>
-                </li>
-            </ul>
-        </div>
-    </nav> -->
 
     <section>
         <div class="container">
@@ -162,76 +101,87 @@
             <h1>Nossos Cursos</h1>
 
     <!-- ==================== Curso #1 ==================== -->
-                <aside>
-                    <div class="col-md-6 d-flex">
-                        <div class="mx-auto mb-3">
-                            <div id="carousel-indicadores" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="https://static.escolakids.uol.com.br/2020/08/dia-estudante.jpg" class="img-fluid rounded">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="https://www.buenosaireseducacional.com.br/wp-content/uploads/2019/06/argentina-da-auxilio-para-estudantes-estrangeiros.png" class="img-fluid rounded">
-                                    </div>
-                                </div>
-                                <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
-                                    <i class="fas fa-angle-double-left fa-3x"></i>
-                                </a>
-                                <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
-                                    <i class="fas fa-angle-double-right fa-3x"></i>
-                                </a>
-                            </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 d-flex">
+                <div id="carousel-indicadores" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://static.escolakids.uol.com.br/2020/08/dia-estudante.jpg" class="img-fluid rounded my-auto">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.buenosaireseducacional.com.br/wp-content/uploads/2019/06/argentina-da-auxilio-para-estudantes-estrangeiros.png" class="img-fluid rounded my-auto">
                         </div>
                     </div>
-                </aside>
-
-                <article>
-                    <div class="col-md-6">
-                        <div class="container-fluid">
-
-                        </div>
-                    </div>
-                </article>
+                    <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
+                        <i class="fas fa-angle-double-left fa-3x"></i>
+                    </a>
+                    <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
+                        <i class="fas fa-angle-double-right fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+            <div  class="col-md-6 d-flex">
+                <h1 class="my-auto">INSIRA O TEXTO AQUI PARCEIROS</h1>
+            </div>
+        </div>
 
     <!-- ==================== Curso #2 ==================== -->
 
-                <article>
-                    <div class="col-md-6">
-                        <div class="container-fluid">
-
-                        </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6 d-flex">
+            <h1 class="my-auto">INSIRA O TEXTO AQUI PARCEIROS</h1>
+        </div>
+        <div  class="col-md-6 d-flex">
+            <div id="carousel-indicadores1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://static.escolakids.uol.com.br/2020/08/dia-estudante.jpg" class="img-fluid rounded my-auto">
                     </div>
-                </article>
-
-                <aside>
-                    <div class="col-md-6 d-flex">
-                        <div class="mx-auto mb-3">
-                            <div id="carousel-indicadores" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="https://static.escolakids.uol.com.br/2020/08/dia-estudante.jpg" class="img-fluid rounded">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="https://www.buenosaireseducacional.com.br/wp-content/uploads/2019/06/argentina-da-auxilio-para-estudantes-estrangeiros.png" class="img-fluid rounded">
-                                    </div>
-                                </div>
-                                <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev">
-                                    <i class="fas fa-angle-double-left fa-3x"></i>
-                                </a>
-                                <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
-                                    <i class="fas fa-angle-double-right fa-3x"></i>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="carousel-item">
+                        <img src="https://www.buenosaireseducacional.com.br/wp-content/uploads/2019/06/argentina-da-auxilio-para-estudantes-estrangeiros.png" class="img-fluid rounded my-auto">
                     </div>
-                </aside>
-
+                </div>
+                <a href="#carousel-indicadores1" class="carousel-control-prev" data-slide="prev">
+                    <i class="fas fa-angle-double-left fa-3x"></i>
+                </a>
+                <a href="#carousel-indicadores1" class="carousel-control-next" data-slide="next">
+                    <i class="fas fa-angle-double-right fa-3x"></i>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- ==================== Curso #3 ==================== -->
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6 d-flex">
+            <div id="carousel-indicadores2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://static.escolakids.uol.com.br/2020/08/dia-estudante.jpg" class="img-fluid rounded my-auto">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.buenosaireseducacional.com.br/wp-content/uploads/2019/06/argentina-da-auxilio-para-estudantes-estrangeiros.png" class="img-fluid rounded my-auto">
+                    </div>
+                </div>
+                <a href="#carousel-indicadores2" class="carousel-control-prev" data-slide="prev">
+                    <i class="fas fa-angle-double-left fa-3x"></i>
+                </a>
+                <a href="#carousel-indicadores2" class="carousel-control-next" data-slide="next">
+                    <i class="fas fa-angle-double-right fa-3x"></i>
+                </a>
+            </div>
+        </div>
+        <div  class="col-md-6 d-flex">
+            <h1 class="my-auto">INSIRA O TEXTO AQUI PARCEIROS</h1>
+        </div>
+    </div>
 
 
     <!-- ==================== Rodapé padrão ==================== -->
+
+
+
+
     <footer></footer>
 </body>
 
