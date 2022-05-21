@@ -23,9 +23,10 @@ h1, h2{
     text-align: center
 }
 
-li{
+ul, li{
     text-align: justify;
-    font-size: 20px;
+    font-size: 20px !important;
+    color: #000 !important;
 }
 
 .btnToggle {
@@ -88,7 +89,8 @@ li{
 
 .col-home{
     text-align: justify;
-    font-size: 20px;
+    font-size: 20px !important;
+    color: #000 !important;
 }
 
 .imgf1 {
