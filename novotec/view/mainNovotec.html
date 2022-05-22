@@ -47,7 +47,8 @@
                             <a href="#depoimentos" class="nav-link">Depoimentos<span class="line">|</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://www.novotec.sp.gov.br/parcerias/Estagio" target="_blank" class="nav-link">Estágio<span class="line">|</span></a>
+                            <a href="https://www.novotec.sp.gov.br/parcerias/Estagio" target="_blank"
+                                class="nav-link">Estágio<span class="line">|</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="#scroll4" class="nav-link">Fale Conosco</a>
@@ -63,34 +64,101 @@
 
         <section>
             <div class="container">
-                <a href="https://play.google.com/store/apps/details?id=br.com.novotec.seufuturo&hl=pt_BR&gl=US" target="_blank"><img src="img/appNovotec.png" class="img-fluid imgf1"></a>
+                <a href="https://play.google.com/store/apps/details?id=br.com.novotec.seufuturo&hl=pt_BR&gl=US"
+                    target="_blank"><img src="img/appNovotec.png" class="img-fluid imgf1"></a>
             </div>
         </section>
+
+    <!-- ==================== Modais de apresentação Novotec ==================== -->
+
+        <div class="modal" tabindex="-1" role="dialog" id="sobre">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sobre Novotec</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>O programa Novotec chegou trazendo opções de cursos técnicos e profissionalizantes gratuitas aos estudantes do ensino médio das escolas estaduais paulistas.
+                            </li>
+                            <li>
+                            Oferecidos por instituições de referência, como as ETECs e FATECs do Centro Paula Souza, os cursos têm conteúdo conectado com demandas do mundo do trabalho e da vida fora da escola.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="why">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Por que fazer Novotec?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Aprenda uma profissão sem prejudicar seus estudos.</li>
+                            <li>Desenvolva responsabilidades e habilidades profissionais.</li>
+                            <li>Fique mais próximo de uma oportunidade de trabalho.</li>
+                            <li>Estude tranquilo com uma <b><a id="bolsa" href="https://fatecspgov.sharepoint.com/sites/PI-4Semestre-Sobreviventes/Shared%20Documents/General/Arquivos%20Relacionados%20ao%20PI/Informe%20Bolsa%20Auxi%CC%81lio_Novotec%20Expresso%20no%20contraturno%202022.01.pdf?CT=1653140057309&OR=ItemsView" target="_blank">bolsa-auxílio.</a></b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="nvexpress">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Novotec Expresso</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>
+                            O programa Novotec Expresso leva formação profissional à juventude, conectando com o currículo do ensino médio.
+                            </li>
+                            <li>
+                            São cursos de qualificação profissional, com certificação garantida e com duração de 120 horas realizadas em um semestre.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <h2>Sobre o Novotec</h2>
-                    <p class="col-home">O programa Novotec chegou trazendo opções de cursos técnicos e
-                        profissionalizantes gratuitas aos estudantes do ensino médio das escolas estaduais paulistas.
-                        Oferecidos por instituições de referência, como as ETECs e FATECs do Centro Paula Souza, os
-                        cursos têm conteúdo conectado com demandas do mundo do trabalho e da vida fora da escola .</p>
+                    <div class="about">
+                        <button type="button" class="btn btn-danger btn-" data-toggle="modal" data-target="#sobre">
+                            Sobre o Novotec
+                        </button>
+                    </div>
                 </div>
                 <div class="col-sm-4">
-                    <h2>Por que fazer Novotec?</h2>
-                    <ul>
-                        <li>Aprenda uma profissão sem prejudicar seus estudos.</li>
-                        <li>Desenvolva responsabilidades e habilidades profissionais.</li>
-                        <li>Fique mais próximo de uma oportunidade de trabalho.</li>
-                        <li>Estude tranquilo com uma bolsa-auxílio.</li>
-                    </ul>
+                    <div class="about">
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#why">
+                            Por que fazer Novotec
+                        </button>
+                    </div>
                 </div>
                 <div class="col-sm-4">
-                    <h2>Novotec Expresso</h2>
-                    <p class="col-home">O programa Novotec Expresso leva formação profissional à juventude, conectando
-                        com o currículo do ensino médio. <br>
-                        São cursos de qualificação profissional, com certificação garantida e com duração de 120 horas
-                        realizadas em um semestre.</p>
+                    <div class="about">
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#nvexpress">
+                            Novotec Expresso
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

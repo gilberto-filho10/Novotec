@@ -87,19 +87,12 @@ ul, li{
     width: 900px;
 }
 
-.col-home{
-    text-align: justify;
-    font-size: 20px !important;
-    color: #000 !important;
-}
-
 .imgf1 {
     width: 100%!important;
     height: 100%;
     margin-bottom: 15px;
 }
 
-/* Tristeza */
 @media (max-width: 1000px)
 {
     .line{
@@ -129,7 +122,35 @@ ul, li{
     font-size: 25px;
 }
 
+/* .btn-modal{
+    background-color: #8c0c0c !important;
+    color: #fff !important;
+    font-size: 25px !important;
+    margin-bottom: 10px;
+} */
+
 #novidades{
     font-size: 30px;
     text-align: center;
+}
+
+.about{
+    text-align: center;
+    font-size: 20px !important;
+    color: #000 !important;
+}
+
+.modal-body{
+    text-align: justify;
+    font-size: 20px !important;
+    color: #000 !important;
+}
+
+.modal-header{
+    background-color: #212529;
+    color: #fff !important;
+}
+
+#bolsa{
+    color: #8c0c0c !important;
 }
