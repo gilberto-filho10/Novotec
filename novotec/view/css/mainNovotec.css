@@ -132,13 +132,8 @@ ul, li{
     border-radius: 5px;
 }
 
-.btnPlus{
-    background-color: #8c0c0c;
-    color: #fff !important;
-    border: #8c0c0c;
-    border-radius: 7px;
-    margin-bottom: 10px;
-    font-size: 25px;
+.p-1{
+    margin-top: 30px;
 }
 
 /* .btn-modal{
@@ -169,6 +164,7 @@ ul, li{
 .modal-header{
     background-color: #212529;
     color: #fff !important;
+    border-radius: 1px !important;
 }
 
 #bolsa{
@@ -193,3 +189,11 @@ ul, li{
     }
 } */
 
+.title-cursos{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+#carousel-indicadores2, #carousel-indicadores1, #carousel-indicadores{
+    margin-bottom: 60px;
+}
