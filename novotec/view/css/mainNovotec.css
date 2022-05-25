@@ -182,12 +182,12 @@ ul, li{
     background-color: #5c0a0a !important;
 }
 
-/* @media (max-width: 770px)
+@media (max-width: 770px)
 {
     .p-1{
         display: none;
     }
-} */
+}
 
 .title-cursos{
     font-size: 30px;
@@ -196,4 +196,37 @@ ul, li{
 
 #carousel-indicadores2, #carousel-indicadores1, #carousel-indicadores{
     margin-bottom: 60px;
+}
+
+.faces{
+    color: #212529;
+    margin-right: -20px !important;
+    z-index: 1;
+    /* margin-top: 25px; */
+}
+
+.quadro{
+    background-color: #424b53;
+    border-radius: 5px !important;
+    /* height: 100px !important; */
+    width: 500px;
+    margin-top: 25px;
+}
+
+.divColumn {
+    flex-direction: column;
+}
+
+.text-quadro{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.depoimentos{
+    margin-top: 20px;
 }
