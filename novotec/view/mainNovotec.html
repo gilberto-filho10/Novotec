@@ -176,8 +176,8 @@
     <!-- ==================== Sessão de Apresentação dos Cursos ==================== -->
     <section class="caixa" id="cursos">
         <div class="container">
-            <div class="separador-conteudo">
-                <h1>Nossos Cursos</h1>
+            <div class="separador-conteudo d-flex">
+                <h1 class="my-auto mx-auto">Nossos Cursos</h1>
             </div>
 
             <!-- ==================== Curso #1 ==================== -->
@@ -321,8 +321,8 @@
     <!-- ==================== Sessão de depoimentos ==================== -->
     <section class="caixa" id="depoimentos">
         <div class="container">
-            <div class="separador-conteudo">
-                <h1>Depoimentos</h1>
+            <div class="separador-conteudo d-flex">
+                <h1 class="my-auto mx-auto">Depoimentos</h1>
             </div>
 
             <div class="row">
@@ -400,7 +400,7 @@
                             <div class="quadro">
                                 <p class="text-quadro">Estudante: <b>Gustavo</b><br>
                                     Curso: <b>Marketing Digital</b><br>
-                                    "Eu acho o curso, mt legal, aprender coisas novas, e mt instrutiva, principalmente fiz novas amizades."
+                                    "Eu acho o curso, muito legal, aprender coisas novas, e muito instrutiva, principalmente fiz novas amizades."
                                 </p>
                             </div>
                         </div>
@@ -413,16 +413,76 @@
     <!-- ==================== Sessão de Perguntas Frequentes ==================== -->
     <section class="depoimentos">
         <div class="container">
-            <div class="separador-conteudo">
-                <h1>Perguntas Frequentes</h1>
+            <div class="separador-conteudo d-flex">
+                <h1 class="my-auto mx-auto">Perguntas Frequentes</h1>
             </div>
 
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link btn-perguntas" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <b>Posso fazer somente aos sábados?</b>
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Não, são 9 horas semanas, então na FATEC Indaiatuba não temos a oferta dos cursos aos sábados.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed btn-perguntas" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <b>As aulas são de segunda a sexta? Todos os dias da semana?</b>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        São 3 dias na semana, 2 horas e meia por dia, cada curso tem sua programação específica.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed btn-perguntas" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <b>Posso fazer mais de um curso?</b>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Por semestre somente é possível fazer 1 curso, pois as aulas acontecem em 3 dias na semana.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed btn-perguntas" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <b>Existem curso no horário noturno para essa modalidade do Novotec?</b>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                      <div class="card-body">
+                          Na Fatec Indaiatuba, os cursos do NOVOTEC sempre são no período da tarde.
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
     </section>
 
 
     <!-- Para partes da página em construção -->
-    <div>
-        <p id="novidades"><i class="fa-solid fa-person-digging"><br></i>Estamos em Obras...</i>
+    <div id="novidades">
+        <p><i class="fa-solid fa-person-digging"><br></i>Estamos em Obras...</i>
         </p>
     </div>
 
