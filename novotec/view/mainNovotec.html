@@ -504,39 +504,52 @@
     <!-- Modal para captura de informações de interessados -->
     <section>
         <!-- Botão para acionar modal -->
+        <!-- <div class="modal-container">
+            <div class="ModalLeads">
+                <h2>Se Inscreva!</h2>
+                <form enctype="multipart/form-data" method="GET" action="/novotec/controller/leads.php">
+                    <p class="p-modal-body"> Nome <input type="text" name="nome" size=30> </p>
+                    <p class="p-modal-body"> E-mail <input type="text" name="email" size=30> </p>
+                    <p class="p-modal-body"> Telefone <input type="text" name="telefone" size=20> </p>
+                    <p class="btn-modal-body"><button class="my-auto mx-auto btn btn-danger btn-edit" type="submit">Quero me inscrever</p>
+                </form>
+            </div> -->
 
         <div class="container">
-            <button type="button" class="separador-conteudo d-flex btn btn-primary" data-toggle="modal"
-                data-target="#ModalLeads">
-                Inscrições
-            </button>
+            <div class="my-auto mx-auto btn-modal-inscricoes">
+                <button type="button" class="btn btn-danger btn-edit my-auto mx-auto" data-toggle="modal" data-target="#ModalLeads">
+                    Inscrições
+                </button>
+            </div>
+        </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="ModalLeads" tabindex="-1" role="dialog"
-                aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="TituloModalCentralizado">Ficou Interessado?</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p class="p-modal-body">Deixe seu contato e te notificamos sobre como e quando se
-                                inscrever:
+        <div class="modal fade" id="ModalLeads" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="TituloModalCentralizado">Ficou Interessado?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="p-modal-body">Deixe seu contato e te notificamos quando e como se inscrever:
+                        </p>
+                        <form enctype="multipart/form-data" method="GET" action="/novotec/controller/leads.php">
+                            <input class="p-modal-body" type="text" name="nome" size=30 placeholder="Nome">
+                            <input class="p-modal-body" type="text" name="email" size=30 placeholder="E-mail">
+                            <input class="p-modal-body" type="text" name="telefone" size=20
+                                placeholder="Telefone / Celular">
+                            <p class="btn-modal-body">
+                                <button class="my-auto mx-auto btn btn-danger btn-edit" type="submit">Quero me
+                                    inscrever!
                             </p>
-                            <form enctype="multipart/form-data" method="GET" action="/novotec/controller/leads.php">
-                                <p class="p-modal-body"> Nome <input type="text" name="nome" size=30> </p>
-                                <p class="p-modal-body"> E-mail <input type="text" name="email" size=30> </p>
-                                <p class="p-modal-body"> Telefone <input type="text" name="telefone" size=20> </p>
-                                <p class="btn-modal-body"><button class="my-auto mx-auto btn btn-danger btn-edit"
-                                        type="submit">Quero me inscrever</p>
-                            </form>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -676,6 +689,24 @@
             slideShadows: false,
         },
     });
+</script>
+
+<!-- Modal para captura do contato de interessados -->
+<script>
+    function iniciaModal(modalID) {
+        if (localStorage.fechaModal !== modalID) {
+            const modal = document.querySelector('#ModalLeads');
+            modal.classList.add('mostrar');
+            localStorage.fechaModal = modalID;
+        }
+    }
+
+    contato.addEventListener('scroll', () => {
+        if (window.pageYOffset > 400) {
+            iniciaModal('modalID')
+        }
+    })
+
 </script>
 
 <!-- Ordem para funcionamento dos Swipers -->
