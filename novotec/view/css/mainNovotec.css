@@ -234,3 +234,19 @@ ul, li, .card-body, .btn-perguntas{
 .depoimentos{
     margin-top: 20px;
 }
+
+.modal-body{
+    text-align: justify;
+}
+
+.p-modal-body{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #000 !important;
+}
+
+.btn-modal-body{
+    text-align: center !important;
+    margin-top: 10px;
+}
