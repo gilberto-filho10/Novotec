@@ -1,0 +1,4 @@
+- O Footer tá conflitando com o Header
+Ele não tá deixando usar o dropdown quando eu incluo o footer
+
+- 
